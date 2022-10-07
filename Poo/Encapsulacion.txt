@@ -1,0 +1,25 @@
+Encapsulacion en Java 1.8
+package paquete 1;
+
+public class Clase1 {
+    private int edad; //Con esto lo que hacemos es encapsular algo que queramos que queramos que nadie toque a no ser,
+     que use los accesores comos los Setters o getters
+
+    public void SetEdad(int edad){  //El metodo setter lo que hace en este caso es establecerle un valor al atributo.
+        this.edad = edad;
+    }
+    public int Getedad(){ //El metodo getter mostramos el valor que hemos dado con setter.
+        return edad;
+    }
+}
+
+package paquete 1 //aqui estoy simulando que tengo un paquete para no escribir todo en el mismo archivo.
+
+public class Clase2{
+    public static void main (String[] args){
+        Clase1 objeto1 = new Clase1();
+
+        objeto1.SetEdad(10);
+        System.out.println("La edad es: "+objeto1.GetEdad());
+    }
+}
