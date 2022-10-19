@@ -1,0 +1,63 @@
+public abstract class Persona{
+
+    public abstract void comer(); 
+
+}
+
+//Creamos una subclase abstracta.
+
+puclic class Comida extends Persona{
+    
+    @Override
+    public void comer(){
+        System.out.println("La planta se alimenta a traves de la fotosintesis");
+    }
+}
+
+//Creamos otra clase abstracta y esta hereda de persona 
+
+public abstract class Animal extends Persona{
+
+}
+
+//Creamos otra clase absttracta pero ahora hereda de Animal
+
+puclic class AnimalCarnivoro extends Animnal{
+    
+    @Override
+    public void comer(){   //Aqui lo que hacemos es llamar al metodo abstracto para que llame a comer.
+        System.out.println("El animal carnivoro comera carne");
+    }
+}
+
+
+
+
+//Segundo ejemplo de clases abstracta
+
+
+
+
+
+package ejemplo;
+public class Calculo extends CalculoAbstracto {
+    @Override
+    public int suma(int a, int b) {
+        return (a + b);
+    }
+}
+
+
+
+package ejemplo;
+
+public class AbstractMain {
+    
+    public static void main(String []args){
+        
+        Operaciones operaciones = new Operaciones();
+        
+        System.out.println("Suma = " + operaciones.suma(45, 35));
+    
+        }
+    }
