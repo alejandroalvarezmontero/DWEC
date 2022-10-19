@@ -1,0 +1,43 @@
+package ejemplo;
+
+public class Vehiculo{
+    private String matricula;
+    private String marca;
+    private String modelo;
+
+    public Vehiculo(String matricula, String marca, String modelo){
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+    public String getMatricula(){
+        return matricula;
+    }
+        public String getMarca(){
+        return marca;
+    }
+        public String getModelo(){
+        return modelo;
+    }
+    public String Imprimir(){
+        return "Matricula: " +getMatricula() + "Marca: " + getMarca() + "Modelo: " + getModelo();  
+    }
+}
+
+package ejemplo;
+
+public class VehiculoTurismo extends Vehiculo{
+    private int Puertas;
+
+    public VehiculoTurismo(int Puertas ,String matricula, String marca, String modelo){
+        super(matricula, marca, modelo);
+        this.Puertas = Puertas;
+    }
+    public int getPuertas(){
+        return Puertas;
+    }
+    @Override
+    public String Imprimir(){
+        return "Matricula: " + getMatricula() + "Marca: " + getMarca(), "Modelo: " getModelo();
+    }
+}
