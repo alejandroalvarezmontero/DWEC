@@ -1,9 +1,9 @@
 package ejemplo;
 
-publioc class Persona{
-    private String nombre;
-    private String apellido;
-    private int edad;
+public class Persona{
+    protected String nombre;
+    protected String apellido;
+    protected int edad;
 
     public Persona(String nombre, String apellido, int edad){
         this.nombre = nombre;
@@ -19,4 +19,22 @@ publioc class Persona{
     public String getEdad(){
         return edad;
     }
+}
+-----------------------------------------------------------------------------------------
+package ejemplo;
+
+public class Alumno extends Persona{
+    private int codigoAlumno;
+    private float notaFinal;
+
+    public Alumno (String nombre, String apellido, int edad, int codigoAlumno, float notaFinal){
+
+        super(nombre,apellido,edad);            /*Con esto lo que hacemos en inicializar los valores que tenemos */
+        this.codigoAlumno = codigoAlumno;       
+        this.notaFinal = notaFinal;                         
+    }
+    public void Imprimir(){
+        System.out.println("Nombre: " + nombre);
+    }
+
 }
