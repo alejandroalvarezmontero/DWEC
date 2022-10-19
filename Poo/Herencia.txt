@@ -10,22 +10,13 @@ public class Persona{
         this.apellido = apellido;
         this.edad = edad;
     }
-    public String getNombre(){
-        return nombre;
-    }
-    public String getApellido(){
-        return apellido;
-    }
-    public String getEdad(){
-        return edad;
-    }
 }
 -----------------------------------------------------------------------------------------
 package ejemplo;
 
 public class Alumno extends Persona{
-    private int codigoAlumno;
-    private float notaFinal;
+    protected int codigoAlumno;
+    protected float notaFinal;
 
     public Alumno (String nombre, String apellido, int edad, int codigoAlumno, float notaFinal){
 
@@ -34,7 +25,15 @@ public class Alumno extends Persona{
         this.notaFinal = notaFinal;                         
     }
     public void Imprimir(){
-        System.out.println("Nombre: " + nombre);
+        System.out.println("Nombre: " + nombre + "Apellido" + apellido + "Edad" + edad + "codigoAlumno" + codigoAlumno + "notaFinal" + notaFinal);
     }
+}
+----------------------------------------------------------------------------------------------------------
+package ejemplo;
 
+public class Clase {
+    public static void main(String[] args){
+        Estudiante estudiante = new Estudiante("Alejandro", "Álvarez", 20, 257, 10, 9);
+        estudiante.Imprimir();
+    }
 }
