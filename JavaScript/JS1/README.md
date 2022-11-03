@@ -1,5 +1,5 @@
 # DWEC
-# Analisis 
+# Analisis  :pencil:
 
 **He necesitado mirar como se usaba el Math.random porque no me acordaba de la forma de escritura del código**
 
@@ -7,7 +7,7 @@
 *Tambien e tenido que mirar el uso de insertRow porque no sabia como se usaba*
 
 
-# Diseño 
+# Diseño   :triangular_ruler:
 
 **Lo e ido soluciando con la busqueda de datos por google y intentado a la vez de hacerlo aprender para un próximo proyecto.**
 
@@ -17,7 +17,7 @@
 
 
 
-# Prueba
+# Prueba  :video_camera:
 
 
 
