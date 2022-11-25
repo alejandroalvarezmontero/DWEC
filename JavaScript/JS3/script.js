@@ -62,6 +62,7 @@ botoncuadro.forEach(boton => {
   }
 });
 
+
 juego.onclick = function(){
   for(var boton2 = 0; boton2 < botoncuadro.length; boton2++){    
     botoncuadro[boton2].style.cssText = "pointer-events:initial;";
