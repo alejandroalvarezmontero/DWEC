@@ -13,6 +13,7 @@ var jugadorganador = [ [0,1,2],[3,4,5],[6,7,8],
 
 var img = document.getElementById("img1");
 var img2 = document.getElementById("img2");
+var img3 =document.getElementById("img3");
 
 function check(){
   juego.style.cssText = juego2;
@@ -30,7 +31,8 @@ function check(){
     }
   }
   if(botoncuadro[0].innerHTML != "" && botoncuadro[1].innerHTML != "" && botoncuadro[2].innerHTML != "" && botoncuadro[3].innerHTML !== "" && botoncuadro[4].innerHTML != "" && botoncuadro[5].innerHTML != "" && botoncuadro[6].innerHTML != "" && botoncuadro[7].innerHTML != "" && botoncuadro[8].innerHTML != "" && state == false){
-    dame.innerHTML = "Sois unos perdedores los";
+    dame.innerHTML = "Sois unos perdedores los dos";
+    img.setAttribute('src', 'manco.jpeg')
    quitar(false);
   }
     
