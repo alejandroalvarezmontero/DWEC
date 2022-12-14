@@ -1,22 +1,27 @@
 body {
-  background: rgb(85, 144, 189);
-  background: linear-gradient(
-    90deg,
-    rgba(85, 144, 189, 1) 0%,
-    rgba(108, 183, 240, 1) 54%,
-    rgba(182, 216, 242, 1) 82%
-  );
+background: url('thumb-1920-613933.jpg');
   text-align: center;
- font-size: 20px;
+ font-size: 25px;
+ background-repeat: no-repeat;
 }
-
+.caja{
+  background-color: white;
+  margin-left: 700px;
+  margin-right: 700px;
+  opacity: 85%;
+  margin-top: 50px;
+}
+.tamaño{
+  width: 300px;
+  height: 100px;
+}
 h1 {
   color: white;
 }
 
 .pokemon-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   gap: 30px;
   width: 80%;
   margin-left: auto;
@@ -27,7 +32,7 @@ h1 {
 
 .pokemon-block,
 .pokemon-block-back {
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
   background-color: white;
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
@@ -35,9 +40,7 @@ h1 {
 
 .img-container {
   background-repeat: no-repeat;
-  background-position: center;
-  
-  
+  background-position: center;  
 }
 
 .pokemon-block p {
