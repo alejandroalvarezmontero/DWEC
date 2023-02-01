@@ -55,9 +55,9 @@ body {
 
 .label {
   position: absolute;
-  top: 15px;
+  top: 20px;
   left: 15px;
-  padding: 0 4px;
+  padding: 0 5px;
   background-color: white;
   color: #DADCE0;
   font-size: 16px;
