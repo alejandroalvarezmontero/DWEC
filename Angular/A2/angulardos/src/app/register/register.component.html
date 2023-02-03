@@ -17,7 +17,7 @@
         <input type="email" class="input" id="email"
         pattern=".+@globex\.com" size="33" required>
 
-        <label for="" class="label">Email</label>
+        <label for="" required="required" class="label">Email</label>
       </div>
 
       <div class="inputContainer">
@@ -26,12 +26,12 @@
       </div>
 
       <div class="inputContainer">
-        <input id="login__password" type="password" name="password" class="input" placeholder="Password" required>
+        <input id="login__password" type="password" required="required" minlength="8" maxlength="8" name="password" class="input" placeholder="Password" required>
         <label for="" class="label">Password</label>
       </div>
 
       <div class="inputContainer">
-        <input id="login__password" type="password" name="password" class="input" placeholder="Password" required>
+        <input id="login__password" type="password" required="required" minlength="8" maxlength="8" name="password" class="input" placeholder="Password" required>
         <label for="" class="label">Confirm Password</label>
       </div>
       <div class="inputContainer">
@@ -45,7 +45,7 @@
         <p>¿Has olvidado tu contraseña?  <a href="http://localhost:4200/recuperacion">Recuperar contraseña</a></p>
       </div>
 
-      <input type="submit" class="submitBtn" value="Sign up">
+      <input type="submit"  class="submitBtn" value="Sign up">
     </form>
     </div>
   </div>
