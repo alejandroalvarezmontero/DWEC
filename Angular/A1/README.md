@@ -19,6 +19,4 @@
 **Aquí podrás ver las validaciones.**
 
 
-<iframe width="600" height = "420"
-src="gif.mp4">
-</iframe>
+![image](gif.gif)
