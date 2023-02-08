@@ -19,4 +19,6 @@
 **Aquí podrás ver las validaciones.**
 
 
-![image](gif.mp4)
+<iframe width="600" height = "420"
+src="gif.mp4">
+</iframe>
