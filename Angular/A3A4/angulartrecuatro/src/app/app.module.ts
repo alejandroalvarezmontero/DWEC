@@ -5,18 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoggerComponent } from './logger/logger.component';
 import { RegisterComponent } from './register/register.component';
-import { VerificarComponent } from './verificar/verificar.component';
-import { OlvidarPassComponent } from './olvidar-pass/olvidar-pass.component';
 import { HomeComponent } from './home/home.component';
+import { OlivdarPassComponent } from './olivdar-pass/olivdar-pass.component';
+import { VerificarComponent } from './verificar/verificar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoggerComponent,
     RegisterComponent,
-    VerificarComponent,
-    OlvidarPassComponent,
-    HomeComponent
+    HomeComponent,
+    OlivdarPassComponent,
+    VerificarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,3 +26,4 @@ import { HomeComponent } from './home/home.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
