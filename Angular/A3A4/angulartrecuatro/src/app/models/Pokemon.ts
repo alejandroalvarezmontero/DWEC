@@ -1,10 +1,10 @@
 export class Pokemon{
-  public title:String;
-  public image:String;
+  public name:String;
+  public url:String;
 
-  constructor(title: String, image: String){
-    this.title = title;
-    this.image = image;
+  constructor(name: String, url: String){
+    this.name = name;
+    this.url = url;
   }
 
 

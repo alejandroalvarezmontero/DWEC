@@ -1,77 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Lista de Pokémons por Tipo</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-		}
-		h1 {
-			text-align: center;
-		}
-		#pokemon-list {
-			list-style-type: none;
-			padding: 0;
-		}
-		#pokemon-list li {
-			margin: 10px;
-		}
-	</style>
-</head>
-<body>
+
 	<h1>Lista de Pokémons por Tipo</h1>
 	<label for="type-select">Selecciona un tipo:</label>
-	<select id="type-select">
-		<option value="10">Fuego</option>
+	<select id="cambiar" (change)="cambioPokemon($event)">
+		<option value="10" selected>Fuego</option>
 		<option value="12">Hierba</option>
     <option value="11">Agua</option>
-    </select>
-    <ul>
-      <li></li>
-    </ul>
-    <!--Nombre de pokemon y url (hipervinculo)!-->
-
-</body>
-
-<script>
+  </select>
+  <ul *ngFor="let pokemon of pokemons">
+    <a href="{{pokemon.url}}"> {{pokemon.name}}</a>
+  </ul>
 
 
-		fetch('https://pokeapi.co/api/v2/type')
-			.then(response => response.json())
-			.then(data => {
 
-
-				const select = document.getElementById('type-select');
-				data.results.forEach(type => {
-					const option = document.createElement('option');
-					option.value = type.name;
-					option.textContent = type.name;
-					select.appendChild(option);
-				});
-			});
-
-
-		document.getElementById('type-select').addEventListener('cambio'), () => {
-			const type = document.getElementById('type-select').value;
-			if (type) {
-
-				fetch(`https://pokeapi.co/api/v2/type/${type}`)
-					.then(response => response.json())
-					.then(data => {
-
-						const pokemonList = document.getElementById('pokemon-list');
-						pokemonList.innerHTML = '';
-						data.pokemon.forEach(pokemon => {
-							const listItem = document.createElement('li');
-							const link = document.createElement('a');
-							link.href = pokemon.pokemon.url;
-							link.textContent = pokemon.pokemon.name;
-							listItem.appendChild(link);
-							pokemonList.appendChild(listItem);
-						});
-					});
-			} else {
-				document.getElementById
-      }}
-</script>
-</html>
