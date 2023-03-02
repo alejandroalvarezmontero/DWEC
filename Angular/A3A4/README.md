@@ -7,4 +7,28 @@
 <button (click)="cambiarFlag()">Cambiar clase</button>**
 *NgTemplate: Es un elemento angular utilizado para representar plantillas HTML.*
 # **Ejemplo NgTemplate: <div> ng-template works!</div><ng-template>Inside ng-template tag</ng-template>**
+
+
+# DWEC
+# Analisis  :pencil:
+
+**Primero miro los videos para poder hacerme una idea de la logica de angular**
+
+
+*Tuve que mirar bien el video para poder usar el onchange*
+
+
+# Diseño   :triangular_ruler:
+
+**El diseño es simple pero lo importante creo que es que coja la logica de angular y funcione las peticiones**
+
+
+
+
+# Prueba  :video_camera:
+
+**En este video se verá como funciona los 3 tipos de pokemon**
+
+
+![image](gif.gif)
  
